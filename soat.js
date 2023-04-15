@@ -1,38 +1,36 @@
 const date = new Date();
 
-function newTime() {
+function Time() {
     const date = new Date();
-    let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
-    let meridiem = "AM";
+    let soat = date.getHours();
+    let minut = date.getMinutes();
+    let sekunt = date.getSeconds();
+    let kku = "AM";
 
-    // AM va PM o'zgaruvchisini aniqlash
-    if (hours > 12) {
-        hours = hours;
-        meridiem = "PM";
+    if (soat > 12) {
+        soat = soat;
+        kku = "PM";
     }
 
-    // 0-9 sonlari uchun oldiga 0 qo'shish
-    hours = (hours < 10) ? "0" + hours : hours;
-    minutes = (minutes < 10) ? "0" + minutes : minutes;
-    seconds = (seconds < 10) ? "0" + seconds : seconds;
+    soat = (soat < 10) ? "0" + soat : soat;
+    minut = (minut < 10) ? "0" + minut : minut;
+    seconds = (sekunt < 10) ? "0" + sekunt : sekunt;
 
-    // HTML elementiga soatni chiqarish
-    const timeString = `${hours}:`;
-    document.getElementById("ap1").innerHTML = timeString;
 
-    const timeStringm = ` ${minutes}:`;
-    document.getElementById("ap2").innerHTML = timeStringm;
+    const tim1 = `${soat}:`;
+    document.getElementById("ap1").innerHTML = tim1;
 
-    const timeStringmm = `${seconds} ${meridiem}`;
-    document.getElementById("ap3").innerHTML = timeStringmm;
+    const tim2 = ` ${minut}:`;
+    document.getElementById("ap2").innerHTML = tim2;
+
+    const tim3 = `${sekunt} ${kku}`;
+    document.getElementById("ap3").innerHTML = tim3;
 
 }
 
 
 
-setInterval(newTime);
+setInterval(Time);
 
 
 
