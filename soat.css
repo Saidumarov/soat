@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 100%, #1345e6 0%);
+}
+
+.contenr {
+    width: 1400px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+
+
+
+h2 {
+    float: left;
+    margin: 200px 0 0 15px;
+    font-size: 50px;
+    color: rgb(187, 192, 196);
+}
+
+#ap1 {
+    margin-left: 500px;
+}
+
+h3 {
+    float: left;
+    margin-top: 270px;
+    font-size: 30px;
+    color: bisque;
+
+}
+
+.test1 {
+    margin-left: -100px;
+}
+
+.test2 {
+    margin-left: -40px;
+}
+
+.test3 {
+    margin-left: -px;
+}
